@@ -1,31 +1,52 @@
 
-@use "../../../node_modules/bootstrap/scss/bootstrap"
+// @use "../../../node_modules/bootstrap/scss/bootstrap"
 
+// General
 a
   text-decoration: none
   color: inherit !important
   &:visited, &:active
-    color: inherit !important
-    
+    color: inherit !important    
 
+// Carousel
 .carousel-btn 
     text-indent: initial !important
-    height: 30px !important
-    width: 30px !important   
+    min-height: 30px !important
+    min-width: 30px !important   
     opacity: 1 !important  
-    &:hover 
+    &:hover
       background-color: white !important
       color: rgba(0,0,0,0.7) !important
 
-.carousel-indicators 
-      
-  
+.carousel-indicators   
   .active
     background-color: white !important
     color: rgba(0,0,0,0.7) !important
+
+.carousel-control  
+  opacity: 1 !important
+  &:active
+    animation: scale 200ms ease-out
+  
+.title   
+  @media screen and (min-width: 768px)
+    font-size: 3rem !important
+
+// Achivements section
+
+.material-symbols-outlined 
+  color:  var(--bs-blue) !important
+  font-size: 4rem !important
+ 
+
+  
+// Animations
+@keyframes scale
+  from 
+    transform: scale(1)
+  to
+   transform: scale(0.9)
     
 
-.carousel-control-prev, .carousel-control-next 
-  bottom: 0
-  right:0
+
 
