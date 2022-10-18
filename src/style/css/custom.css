@@ -90,6 +90,13 @@ a:visited, a:active {
   font-size: 4rem !important;
 }
 
+.project-slider {
+  display: none;
+}
+.project-slider.active {
+  display: flex;
+}
+
 @keyframes scale {
   from {
     transform: scale(1);
