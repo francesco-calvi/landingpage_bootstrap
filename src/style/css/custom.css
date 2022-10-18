@@ -19,15 +19,21 @@ a:visited, a:active {
   min-height: 30px !important;
   min-width: 30px !important;
   opacity: 1 !important;
+  box-sizing: content-box;
+}
+.carousel-btn.active {
+  background-color: var(--bs-white) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 .carousel-btn:hover {
   background-color: var(--bs-white) !important;
   color: rgba(0, 0, 0, 0.7) !important;
 }
 
-.carousel-indicators .active {
-  background-color: var(--bs-white) !important;
-  color: rgba(0, 0, 0, 0.7) !important;
+@media screen and (min-width: 992px) {
+  .carousel-indicators {
+    position: static;
+  }
 }
 
 .carousel-control {
@@ -69,6 +75,14 @@ a:visited, a:active {
 .nav-item.active > span {
   background: var(--bs-blue);
   height: 6px;
+}
+
+.card-fs, .card-tag {
+  font-size: 0.8rem !important;
+}
+
+.card-tag {
+  width: 100px;
 }
 
 .material-symbols-outlined {

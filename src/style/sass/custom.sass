@@ -20,14 +20,17 @@ a
   min-height: 30px !important
   min-width: 30px !important   
   opacity: 1 !important  
+  box-sizing: content-box
+  &.active
+    background-color: var(--bs-white) !important
+    color: rgba(0,0,0,0.7) !important
   &:hover
     background-color: var(--bs-white) !important
     color: rgba(0,0,0,0.7) !important
-
-.carousel-indicators    
-  .active
-    background-color: var(--bs-white) !important
-    color: rgba(0,0,0,0.7) !important
+  
+.carousel-indicators 
+  @media  screen and (min-width: 992px)
+    position: static  
 
 .carousel-control  
   opacity: 1 !important
@@ -61,6 +64,14 @@ a
     & > span
       background: var(--bs-blue)
       height: 6px    
+
+// Card
+.card-fs
+  font-size: 0.8rem !important
+
+.card-tag
+  @extend .card-fs
+  width: 100px
 
 // Material icons
 .material-symbols-outlined 
