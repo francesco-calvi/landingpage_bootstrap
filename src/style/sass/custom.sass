@@ -6,37 +6,67 @@ a
   text-decoration: none
   color: inherit !important
   &:visited, &:active
-    color: inherit !important    
+    color: inherit !important
+
+.scrollable 
+  scroll-behavior: smooth
+  scrollbar-width: none
+  &::-webkit-scrollbar
+    display: none    
 
 // Carousel
 .carousel-btn 
-    text-indent: initial !important
-    min-height: 30px !important
-    min-width: 30px !important   
-    opacity: 1 !important  
-    &:hover
-      background-color: white !important
-      color: rgba(0,0,0,0.7) !important
+  text-indent: initial !important
+  min-height: 30px !important
+  min-width: 30px !important   
+  opacity: 1 !important  
+  &:hover
+    background-color: var(--bs-white) !important
+    color: rgba(0,0,0,0.7) !important
 
-.carousel-indicators   
+.carousel-indicators    
   .active
-    background-color: white !important
+    background-color: var(--bs-white) !important
     color: rgba(0,0,0,0.7) !important
 
 .carousel-control  
   opacity: 1 !important
   &:active
     animation: scale 200ms ease-out
+
+.carousel-item
+  max-height: 100vh
+  & > img 
+    object-fit: cover
+    height: 100%
+    @media  screen and (min-width: 660px)       
+      aspect-ratio: 16 / 9
+    
   
 .title   
-  @media screen and (min-width: 768px)
+  font-size: 2rem !important
+  @media screen and (min-width: 460px)
     font-size: 3rem !important
 
-// Achivements section
 
+// Navbar
+.nav-item
+  & > span 
+    height: 2px
+    background: var(--bs-gray-200) 
+
+  &.active  
+    & > a     
+    color: var(--bs-blue) !important
+    & > span
+      background: var(--bs-blue)
+      height: 6px    
+
+// Material icons
 .material-symbols-outlined 
-  color:  var(--bs-blue) !important
+  color: var(--bs-blue) !important
   font-size: 4rem !important
+ 
  
 
   

@@ -31,11 +31,13 @@
       <!-- CAROUSEL -->
       <div
         id="carouselExampleCaptions"
-        class="carousel slide"
+        class="carousel slide mh-100"
         data-bs-ride="false"
       >
-        <div class="carousel-indicators justify-content-lg-between">
-          <div class="d-flex align-items-center justify-content-center">
+        <div
+          class="carousel-indicators container-xxl justify-content-lg-between align-items-end px-4 mx-auto mb-5"
+        >
+          <div class="d-flex align-items-center justify-content-center gap-1">
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
@@ -94,11 +96,14 @@
             </button>
           </div>
         </div>
+
         <div
-          class="carousel-caption d-md-block position-absolute top-0 end-0 start-0 text-start my-5 px-4 col-lg-8 col-xl-8 col-xxl-8"
-          style="z-index: 2"
+          class="carousel-caption container-xxl d-flex flex-column justify-content-center justify-content-lg-start position-absolute top-0 bottom-0 end-0 start-0 text-start my-md-5 px-4"
+          style="z-index: 1"
         >
-          <h1 class="fs-1 title fw-bolder lh-base">
+          <h1
+            class="title col-lg-8 col-xl-8 col-xxl-8 fw-bolder lh-small lh-sm-base"
+          >
             Scropri come generiamo valore condiviso
           </h1>
           <p class="fs-6 fs-lg-6 fw-semibold">
@@ -107,13 +112,14 @@
           <div class="text-center text-sm-start mt-5">
             <a href="#">
               <button
-                class="btn bg-white rounded-pill py-2 px-3 h-10 text-black"
+                class="btn bg-white rounded-pill py-2 px-3 h-10 py-lg-3 px-lg-5 text-black"
               >
                 Scropri le nostre soluzioni
               </button>
             </a>
           </div>
         </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -128,12 +134,6 @@
               class="d-block w-100"
               alt="Shideshow image 2"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
           </div>
           <div class="carousel-item">
             <img
@@ -141,50 +141,598 @@
               class="d-block w-100"
               alt="Shideshow image 3"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- ACHIVEMENTS SECTION -->
-    <section class="my-5">
-      <h3 class="text-center text-primary fw-bold px-4">
-        Siamo una piattaforma globale di ingegneristica avanzata
-      </h3>
-      <div
-        class="d-flex align-items-start justify-content-start gap-4 my-5 px-4 overflow-scroll"
-      >
-        <div class="d-flex flex-column align-items-center gap-1 w-100 px-5">
-          <span class="material-symbols-outlined"> lightbulb </span>
-          <span class="fs-3 fw-bold">2.660</span>
-          <span class="fs-6 text-center">Brevetti</span>
+    <main>
+      <!-- ACHIVEMENTS SECTION -->
+      <section class="my-5 container-xxl">
+        <h2 class="text-center text-primary fw-bold px-4 mx-auto col-lg-6">
+          Siamo una piattaforma globale di ingegneristica avanzata
+        </h2>
+        <div
+          class="scrollable d-flex align-items-start justify-content-start gap-4 mt-5 mb-3 px-4 overflow-scroll"
+        >
+          <div class="d-flex flex-column align-items-center gap-1 w-100 px-5">
+            <span class="material-symbols-outlined"> lightbulb </span>
+            <span class="fs-3 fw-bold">2.660</span>
+            <span class="fs-6 text-center">Brevetti</span>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-1 w-100 px-5">
+            <span class="material-symbols-outlined"> format_color_reset </span>
+            <span class="fs-3 fw-bold">78%</span>
+            <span class="fs-6 text-center">Ordini di progetti no oil</span>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-1 w-100 px-5">
+            <span class="material-symbols-outlined"> energy_savings_leaf </span>
+            <span class="fs-3 fw-bold">2025</span>
+            <span class="fs-6 text-center">Net zero per emissioni scope 2</span>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-1 w-100 px-5">
+            <span class="material-symbols-outlined"> leaderboard </span>
+            <span class="fs-3 fw-bold">0,1%</span>
+            <span class="fs-6 text-center">Contributo al PIL Italia</span>
+          </div>
         </div>
-        <div class="d-flex flex-column align-items-center gap-1 w-100 px-5">
-          <span class="material-symbols-outlined"> format_color_reset </span>
-          <span class="fs-3 fw-bold">78%</span>
-          <span class="fs-6 text-center">Ordini di progetti no oil</span>
+        <div class="text-center px-4">
+          <a href="#">
+            <button class="btn btn-primary rounded-pill p-3 px-lg-5 mb-5 h-10">
+              Conosci Saipem
+            </button>
+          </a>
         </div>
-        <div class="d-flex flex-column align-items-center gap-1 w-100 px-5">
-          <span class="material-symbols-outlined"> lightbulb </span>
-          <span class="fs-3 fw-bold">2.660</span>
-          <span class="fs-6 text-center">Brevetti</span>
-        </div>
-      </div>
-      <div class="text-center px-4">
-        <a href="#">
-          <button class="btn btn-primary rounded-pill py-2 px-3 h-10">
-            Conosci Saipem
-          </button>
-        </a>
-      </div>
-    </section>
+      </section>
 
+      <!-- PROJECTS SECTION -->
+      <section class="my-5 container-xxl">
+        <h2 class="text-center fw-bold px-4 mx-auto mb-3 col-lg-6">
+          Un futuro low-carbon, 4 soluzioni per renderlo possibile
+        </h2>
+        <nav
+          class="mx-auto d-flex row flex-nowrap justify-content-lg-center align-items-end overflow-scroll scrollable"
+        >
+          <div
+            class="nav-item active position-relative col-6 col-sm-4 col-lg-2 text-center me-2 py-3 px-2 px-lg-1"
+            onclick="toggleActive(this)"
+          >
+            <a
+              class="text-uppercase fw-semibold text-center fs-6"
+              href="#nav-1-1"
+              >Asset based offer</a
+            >
+            <span class="position-absolute bottom-0 end-0 start-0"></span>
+          </div>
+          <div
+            class="nav-item position-relative col-6 col-sm-4 col-lg-2 text-center me-2 py-3 px-2 px-lg-1"
+            onclick="toggleActive(this)"
+          >
+            <a
+              class="text-uppercase fw-semibold text-center fs-6"
+              href="#nav-1-2"
+              >Robotica, soluzioni digitali e industriali</a
+            >
+            <span class="position-absolute bottom-0 end-0 start-0"></span>
+          </div>
+          <div
+            class="nav-item position-relative col-6 col-sm-4 col-lg-2 text-center me-2 py-3 px-2 px-lg-1"
+            onclick="toggleActive(this)"
+          >
+            <a
+              class="text-uppercase fw-semibold text-center fs-6"
+              href="#nav-1-3"
+              >Vettori energetici</a
+            >
+            <span class="position-absolute bottom-0 end-0 start-0"></span>
+          </div>
+          <div
+            class="nav-item position-relative col-6 col-sm-4 col-lg-2 text-center py-3 px-2 px-lg-1"
+            onclick="toggleActive(this)"
+          >
+            <a
+              class="text-uppercase fw-semibold text-center fs-6"
+              href="#nav-1-4"
+              >Infrastrutture sostenibili</a
+            >
+            <span class="position-absolute bottom-0 end-0 start-0"></span>
+          </div>
+        </nav>
+        <div class="d-flex align-items-center overflow-hidden mt-3">
+          <!-- PROJECTS 1 -->
+          <div
+            id="nav-1-1"
+            class="scrollable d-flex align-items-start justify-content-start gap-4 overflow-scroll"
+            style="min-width: 100%"
+          >
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_1.jpg"
+                class="card-img-top"
+                alt="Hydrone"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hydrone</h3>
+                <p class="card-text lh-base fs-6">
+                  Fare la storia della robotica sottomarina operando in
+                  condizioni ambientali estreme.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_2.jpg"
+                class="card-img-top"
+                alt="Hywind"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hywind</h3>
+                <p class="card-text lh-base fs-6">
+                  Installare il primo parco eolico galleggiante al mondo.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_3.jpg"
+                class="card-img-top"
+                alt="Agnes"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Agnes</h3>
+                <p class="card-text lh-base fs-6">
+                  Produrre energie rinnovabili e idrogeno green al largo delle
+                  coste di Ravenna.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECTS 2 -->
+          <div
+            id="nav-1-2"
+            class="scrollable d-flex align-items-start justify-content-start gap-4 overflow-scroll"
+            style="min-width: 100%"
+          >
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_4.jpg"
+                class="card-img-top"
+                alt="Hydrone"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hydrone</h3>
+                <p class="card-text lh-base fs-6">
+                  Fare la storia della robotica sottomarina operando in
+                  condizioni ambientali estreme.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_5.jpg"
+                class="card-img-top"
+                alt="Hywind"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hywind</h3>
+                <p class="card-text lh-base fs-6">
+                  Installare il primo parco eolico galleggiante al mondo.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_6.jpg"
+                class="card-img-top"
+                alt="Agnes"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Agnes</h3>
+                <p class="card-text lh-base fs-6">
+                  Produrre energie rinnovabili e idrogeno green al largo delle
+                  coste di Ravenna.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECTS 3 -->
+          <div
+            id="nav-1-3"
+            class="scrollable d-flex align-items-start justify-content-start gap-4 overflow-scroll"
+            style="min-width: 100%"
+          >
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_7.jpg"
+                class="card-img-top"
+                alt="Hydrone"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hydrone</h3>
+                <p class="card-text lh-base fs-6">
+                  Fare la storia della robotica sottomarina operando in
+                  condizioni ambientali estreme.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_8.jpg"
+                class="card-img-top"
+                alt="Hywind"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hywind</h3>
+                <p class="card-text lh-base fs-6">
+                  Installare il primo parco eolico galleggiante al mondo.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_9.jpg"
+                class="card-img-top"
+                alt="Agnes"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Agnes</h3>
+                <p class="card-text lh-base fs-6">
+                  Produrre energie rinnovabili e idrogeno green al largo delle
+                  coste di Ravenna.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECTS 4 -->
+          <div
+            id="nav-1-4"
+            class="scrollable d-flex align-items-start justify-content-start gap-4 overflow-scroll"
+            style="min-width: 100%"
+          >
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_10.jpg"
+                class="card-img-top"
+                alt="Hydrone"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hydrone</h3>
+                <p class="card-text lh-base fs-6">
+                  Fare la storia della robotica sottomarina operando in
+                  condizioni ambientali estreme.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_1.jpg"
+                class="card-img-top"
+                alt="Hywind"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Hywind</h3>
+                <p class="card-text lh-base fs-6">
+                  Installare il primo parco eolico galleggiante al mondo.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="card flex-shrink-0 flex-grow-1 border-0"
+              style="width: 18rem"
+            >
+              <img
+                src="/src/assets/images/card_2.jpg"
+                class="card-img-top"
+                alt="Agnes"
+                style="max-height: 260px"
+              />
+              <div class="card-body">
+                <div
+                  class="bg-secondary bg-gradient bg-opacity-10 p-2 text-uppercase w-50 fw-bold fs-6 text-center"
+                >
+                  Offshore
+                </div>
+                <h3 class="card-title my-3 fw-bold fs-1">Agnes</h3>
+                <p class="card-text lh-base fs-6">
+                  Produrre energie rinnovabili e idrogeno green al largo delle
+                  coste di Ravenna.
+                </p>
+                <a href="#" class="d-flex align-items-center">
+                  <ion-icon
+                    size="large"
+                    name="chevron-forward-circle"
+                    style="color: black"
+                  ></ion-icon>
+                  <span class="mx-2 text-uppercase fw-semibold"
+                    >Scopri il progetto</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center px-4">
+          <a href="#">
+            <button class="btn btn-primary rounded-pill p-3 px-lg-5 mt-3 h-10">
+              Scopri tutte le nostre Soluzioni
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- SOLUTIONS -->
+      <section class="d-sm-none my-5">
+        <div class="card border-0 w-100">
+          <img
+            src="/src/assets/images/card_3.jpg"
+            class="card-img-top"
+            alt="Sostenibilita"
+          />
+          <div class="card-body px-4 bg-success bg-opacity-75 text-white">
+            <div class="text-uppercase w-50 fw-bold fs-6">
+              Sostenibilit&agrave;
+            </div>
+            <h3 class="card-title my-3 fw-bold fs-1">
+              Siamo ingegneri per un futuro sostenibile
+            </h3>
+            <p class="card-text lh-base fs-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquam metus faucibus, commodo leo ut, elementum
+              est.
+            </p>
+            <a href="#" class="d-flex align-items-center">
+              <ion-icon size="large" name="chevron-forward-circle"></ion-icon>
+              <span class="mx-2 text-uppercase fw-semibold"
+                >Scopri il progetto</span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="card border-0 w-100 mt-4">
+          <img
+            src="/src/assets/images/card_4.jpg"
+            class="card-img-top"
+            alt="Persone"
+          />
+          <div class="card-body px-4 bg-primary bg-opacity-75 text-white">
+            <div class="text-uppercase w-50 fw-bold fs-6">Persone</div>
+            <h3 class="card-title my-3 fw-bold fs-1">
+              A tu per tu con Syedaneef Basha, ovvero come l'inclusivit&agrave;
+              fa vincere tutto
+            </h3>
+            <p class="card-text lh-base fs-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque aliquam metus faucibus, commodo leo ut, elementum
+              est.
+            </p>
+            <a href="#" class="d-flex align-items-center">
+              <ion-icon size="large" name="chevron-forward-circle"></ion-icon>
+              <span class="mx-2 text-uppercase fw-semibold"
+                >Scopri il progetto</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const toggleActive = (el) => {
+        el.parentNode.childNodes.forEach((child) => {
+          child.classList?.remove("active");
+        });
+        el.classList.add("active");
+      };
+    </script>
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -192,6 +740,15 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Ionic JS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <!-- TODO: remove me -->
     <!-- <script
       src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
