@@ -64,6 +64,11 @@ a:visited, a:active {
     font-size: 3rem !important;
   }
 }
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 4rem !important;
+  }
+}
 
 .nav-item > span {
   height: 2px;
