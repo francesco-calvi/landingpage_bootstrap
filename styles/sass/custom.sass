@@ -36,15 +36,21 @@ a
   opacity: 1 !important
   &:active
     animation: scale 200ms ease-out
+  &:hover 
+    background-color: rgba(255,255,255,0.5) !important
+    color: rgba(0,0,0,0.7) !important 
 
 .carousel-item
-  max-height: 100vh
-  & > img 
-    object-fit: cover
-    height: 100%
-    @media  screen and (min-width: 660px)       
-      aspect-ratio: 16 / 9
-    
+  height: 100vh
+  opacity: 0.9
+
+  &.one
+    background: url('/assets/images/slideshow_1.jpg') center no-repeat fixed
+  &.two
+    background: url('/assets/images/slideshow_2.jpg') center no-repeat fixed
+  &.three
+    background: url('/assets/images/slideshow_3.jpg') center no-repeat fixed
+  
   
 .title   
   font-size: 2rem !important
@@ -56,13 +62,15 @@ a
 
 // Navbar
 .nav-item
+  cursor: pointer
   & > span 
+    transition: all 100ms
     height: 2px
     background: var(--bs-gray-200) 
 
   &.active  
     & > a     
-    color: var(--bs-blue) !important
+      color: var(--bs-blue) !important
     & > span
       background: var(--bs-blue)
       height: 6px    

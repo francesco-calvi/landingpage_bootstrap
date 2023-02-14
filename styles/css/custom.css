@@ -42,18 +42,23 @@ a:visited, a:active {
 .carousel-control:active {
   animation: scale 200ms ease-out;
 }
+.carousel-control:hover {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
 
 .carousel-item {
-  max-height: 100vh;
+  height: 100vh;
+  opacity: 0.9;
 }
-.carousel-item > img {
-  object-fit: cover;
-  height: 100%;
+.carousel-item.one {
+  background: url("/assets/images/slideshow_1.jpg") center no-repeat fixed;
 }
-@media screen and (min-width: 660px) {
-  .carousel-item > img {
-    aspect-ratio: 16/9;
-  }
+.carousel-item.two {
+  background: url("/assets/images/slideshow_2.jpg") center no-repeat fixed;
+}
+.carousel-item.three {
+  background: url("/assets/images/slideshow_3.jpg") center no-repeat fixed;
 }
 
 .title {
@@ -70,11 +75,15 @@ a:visited, a:active {
   }
 }
 
+.nav-item {
+  cursor: pointer;
+}
 .nav-item > span {
+  transition: all 100ms;
   height: 2px;
   background: var(--bs-gray-200);
 }
-.nav-item.active {
+.nav-item.active > a {
   color: var(--bs-blue) !important;
 }
 .nav-item.active > span {
@@ -109,4 +118,4 @@ a:visited, a:active {
   to {
     transform: scale(0.9);
   }
-}/*# sourceMappingURL=custom.css.map */
+}
