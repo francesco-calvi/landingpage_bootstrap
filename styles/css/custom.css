@@ -52,13 +52,13 @@ a:visited, a:active {
   opacity: 0.9;
 }
 .carousel-item.one {
-  background: url("../assets/images/slideshow_1.jpg") center no-repeat fixed;
+  background: url("../../assets/images/slideshow_1.jpg") center no-repeat fixed;
 }
 .carousel-item.two {
-  background: url("../assets/images/slideshow_2.jpg") center no-repeat fixed;
+  background: url("../../assets/images/slideshow_2.jpg") center no-repeat fixed;
 }
 .carousel-item.three {
-  background: url("../assets/images/slideshow_3.jpg") center no-repeat fixed;
+  background: url("../../assets/images/slideshow_3.jpg") center no-repeat fixed;
 }
 
 .title {
